@@ -1,17 +1,16 @@
 function makeBuffer() {
 
-	var massege = [];
+	var massege = " ";
 
 	return {
 		add : function(value) {
-			massege.push(String(value));
+			massege += value + " "; 
 		},
 		reset : function() {
-			massege.length = 0;
+			massege = " ";
 		},
 		print : function() {
-			var str = massege.join(" ");
-			console.log(str);
+			console.log(massege);
 		}
 	}
 }
